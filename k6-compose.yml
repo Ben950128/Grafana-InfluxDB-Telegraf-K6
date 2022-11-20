@@ -19,3 +19,7 @@ services:
     deploy:
       restart_policy:
         condition: none
+#      指定哪個node來跑
+#      placement:
+#        constraints:
+#          - node.role == manager
