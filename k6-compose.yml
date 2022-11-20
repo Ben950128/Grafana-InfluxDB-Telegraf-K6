@@ -15,7 +15,7 @@ services:
       - K6_OUT=influxdb=http://influxdb:8086/k6
     volumes:
       - ./scripts:/scripts
-    entrypoint: ['k6', 'run', '/scripts/ewoks.js']
+    entrypoint: ['k6', 'run', '/scripts/k6_test.js']
     deploy:
       restart_policy:
         condition: none
