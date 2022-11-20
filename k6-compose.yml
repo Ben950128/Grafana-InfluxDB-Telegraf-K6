@@ -16,9 +16,11 @@ services:
     volumes:
       - ./scripts:/scripts
     entrypoint: ['k6', 'run', '/scripts/k6_test.js']
-    deploy:
-      restart_policy:
-        condition: none
+
+#    用docker swarm時設定只跑1次
+#    deploy:
+#      restart_policy:
+#        condition: none
 #      指定哪個node來跑
 #      placement:
 #        constraints:
