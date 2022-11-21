@@ -9,7 +9,7 @@ networks:
 services:
   telegraf:
     hostname: "{{.Node.Hostname}}"
-    image: telegraf:latest
+    image: telegraf:1.17
     networks:
       - telegraf
     volumes:
