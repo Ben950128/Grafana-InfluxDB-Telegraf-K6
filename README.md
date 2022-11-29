@@ -27,5 +27,5 @@
 ## Grafana設定
 #### Datasource:(telegraf及k6) 
 #### URL: http://influxdb:8086、Database: telegraf或k6
-#### Dashboard: template方面，telegraf用1443，k6用2587
+#### Dashboard: template方面，telegraf用1443，k6用2587，docker用1150
 #### 備註: k6在設定datasource之前要先起一個container將data匯入influxdb，不然無法設定datasource
